@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  /* background-color:  #f2f2f2; */
 }
 
 .message {
@@ -35,6 +36,7 @@
   align-items: center;
   border-radius: 5px;
   margin: 1.5rem 0 0 0;
+  background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
@@ -72,9 +74,6 @@
     align-items: center;
 }
 
-.checkbox{
-    border: 2px solid yellow;
-}
 
 .labelTerms {
     font-weight: 900;

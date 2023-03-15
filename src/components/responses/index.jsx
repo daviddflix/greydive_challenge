@@ -7,6 +7,7 @@ import {BsFillFlagFill} from 'react-icons/bs'
 import {BsCalendar2DateFill} from 'react-icons/bs'
 import {MdEmojiPeople} from 'react-icons/md'
 import {MdEmail} from 'react-icons/md'
+import Loader from "../loader/loader";
 
 export default function Responses() {
   const [data, setData] = useState([]);
@@ -47,7 +48,7 @@ export default function Responses() {
       </div>
       <div className={s.containerResponses}>
         {data.length === 0 ? (
-          <h3>cargando...</h3>
+          <Loader/>
         ) : (
           data?.map((item, i) => {
     
@@ -87,30 +88,30 @@ function Layout({ country, birth_date, email, full_name, timestamp }) {
         
         <MdEmojiPeople className={s.icons}/>
         <div className={s.containerIcons}>
-            <h4>Nombre completo</h4>
-            <h3 className={s.label}>{full_name}</h3>
+            <h3>Nombre completo</h3>
+            <h4 className={s.label}>{full_name}</h4>
         </div>
       </div>
       <div className={s.subContainerLayout}>
       <MdEmail className={s.icons}/>
       <div className={s.containerIcons}>
-        <h4>Correo electrónico</h4>
-        <h3>{email}</h3>
+        <h3>Correo electrónico</h3>
+        <h4>{email}</h4>
         </div>
       </div>
       <div className={s.subContainerLayout}>
       <BsCalendar2DateFill className={s.icons}/>
       <div className={s.containerIcons}>
-        <h4>Fecha de nacimiento</h4>
-        <h3>{birth_date}</h3>
+        <h3>Fecha de nacimiento</h3>
+        <h4>{birth_date}</h4>
         </div>
       </div>
       <div className={s.subContainerLayout}>
 
       <BsFillFlagFill className={s.icons}/>
       <div className={s.containerIcons}>
-        <h4>País de origen</h4>
-        <h3 className={s.label}>{country}</h3>
+        <h3>País de origen</h3>
+        <h4 className={s.label}>{country}</h4>
         </div>
       </div>
     </div>
