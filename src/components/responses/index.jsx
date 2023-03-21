@@ -12,7 +12,6 @@ import Loader from "../loader/loader";
 export default function Responses() {
   const [data, setData] = useState([]);
 
-  console.log("data", data);
   const fetchPost = async () => {
     await getDocs(collection(store, "contact Info")).then((querySnapshot) => {
       const newData = querySnapshot.docs.map((doc) => ({

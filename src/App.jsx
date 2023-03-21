@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Responses from './components/responses';
 
+
 function App() {
   
 
@@ -17,7 +18,7 @@ function App() {
       <Navbar/>
         <Routes>
           <Route exact path="/" element={<Form/>} />
-          <Route path="/responses" element={<Responses/>} />
+          <Route path="/responses" element={<Responses/>} />  
         </Routes>
       </Router>
       
