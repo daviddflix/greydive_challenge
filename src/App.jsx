@@ -18,7 +18,7 @@ function App() {
       <Navbar/>
         <Routes>
           <Route exact path="/" element={<Form/>} />
-          <Route path="/responses" element={<Responses/>} />  
+          <Route path="/replies" element={<Responses/>} />  
         </Routes>
       </Router>
       

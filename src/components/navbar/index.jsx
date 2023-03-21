@@ -28,7 +28,7 @@ export default function Navbar() {
               isPending ? s.navlink : isActive ? s.activeLink : s.navlink
             }
             exact="true"
-            to="/responses"
+            to="/replies"
           >
             respuestas
           </NavLink>
